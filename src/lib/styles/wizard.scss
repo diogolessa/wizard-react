@@ -1,0 +1,29 @@
+.wr-steps {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.wr-step {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: pink;
+  border-bottom: 2px solid transparent;
+
+  &.active {
+    border-bottom-color: red;
+  }
+
+  &.completed {
+    background-color: palevioletred;
+  }
+
+  &.not-allowed {
+    cursor: not-allowed;
+    background-color: gainsboro;
+  }
+}
+
+.wr-container {
+  padding: 2rem;
+}
